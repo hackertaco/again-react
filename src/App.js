@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Wrapper>
-        <Hello name="react" color="red" />
+        <Hello name="react" color="red" isSpecial={true} />
       </Wrapper>
     </div>
   );
