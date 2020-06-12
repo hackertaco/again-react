@@ -7,10 +7,6 @@ function countActiveUsers(users) {
   return users.filter((user) => user.active).length;
 }
 const initialState = {
-  inputs: {
-    username: "",
-    email: "",
-  },
   users: [
     {
       id: 1,
@@ -74,14 +70,6 @@ function App() {
 
   const { users } = state;
 
-  // const onChange = useCallback((e) => {
-  //   const { name, value } = e.target;
-  //   dispatch({
-  //     type: "CHANGE_INPUT",
-  //     name,
-  //     value,
-  //   });
-  // }, []);
   const onCreate = useCallback(() => {
     dispatch({
       type: "CREATE_USER",
